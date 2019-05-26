@@ -16,12 +16,14 @@
             {{#if @site.facebook}}
                 <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
             {{/if}}
+            {{#if @site.linkedin}}
             <a class="social link" href="https://www.linkedin.com/in/anselmo-silva-100b5826/" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
+            {{/if}}
         </div>
         {{#if @labs.subscribers}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{else}}
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://leonxama.azurewebsites.net/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
         {{/if}}
     </div>
 </nav>
