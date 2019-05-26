@@ -13,5 +13,16 @@
 		"frontend": {
 			"maxAge": 600
 		}
-	}
+    },
+    
+    "mail": {
+        "transport": "SMTP",
+        "options": {
+            "service": "Mailgun",
+            "auth": {
+                "user": "postmaster@sandbox56a7a81cc1c1463aa7cbab4d0d27d868.mailgun.org",
+                "pass": "86d1019f75158767b0a879f3fc6c5686"
+            }
+        }
+    }
 }
